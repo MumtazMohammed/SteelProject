@@ -1,0 +1,229 @@
+<template>
+  <div class="section-two">
+    <div class="container">
+      <div class="col-lg-12 h3">
+        <h3 class="text-center">ماذا نقدم</h3>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 ">
+          <h3>كنت تحتاج إلى عدد أكبر</h3>
+          <p class="p">
+            إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة
+            عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد
+            النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+            كثير من الأحيان أن يطلع على صورة حقيقية لتصميم الموقع. إذا كنتقيقية
+            لتصميم الموقع.
+          </p>
+        </div>
+      </div>
+      <div class="row cards row-cols-2 row-cols-md-3 row-cols-lg-3 g-1">
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/aluminijum_1_200617_tw630.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">مولد النص</h5>
+              <p class="card-text">
+                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/aluminijum_1_200617_tw630.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">مولد النص</h5>
+              <p class="card-text">
+                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img
+              src="../assets/aluminijum_1_200617_tw630.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">مولد النص</h5>
+              <p class="card-text">
+                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: "Secondsection",
+  data() {
+    return {};
+  },
+};
+</script>
+<style scoped>
+.section-two {
+  background-color: #085aa5;
+  border-top: 8px solid rgb(255, 255, 255);
+  padding-bottom: 50px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.section-two::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2.5vh;
+  background-color: #ffffff;
+  transform: skew(0deg, 8deg);
+  z-index: 0;
+  bottom: 111px;
+}
+.container {
+  position: relative;
+}
+.h3 {
+  margin-top: 30px;
+  font-family: "El Messiri";
+  color: #cfcfcf;
+  position: relative;
+}
+.h3::after {
+  content: "";
+  position: absolute;
+  width: 166px;
+  height: 3px;
+  background-color: #cfcfcf;
+  bottom: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.h3::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  bottom: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.text-center {
+  color: #ececec;
+}
+.p {
+  font-family: "El Messiri";
+  color: #cfcfcf;
+  font-size: 18px;
+  line-height: 1.6;
+}
+.img-thumbnail {
+  position: relative;
+  z-index: 2;
+}
+.row {
+  margin-top: 50px;
+  justify-content: space-between;
+}
+h3 {
+  color: #ececec;
+  font-family: "El Messiri";
+  margin-bottom: 10px;
+}
+.cards {
+  margin-top: 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #1971c2b0;
+  background-clip: border-box;
+  border-radius: 0px;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  transition: backdrop-filter 0.1s linear;
+}
+.card:hover {
+  /* box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.32); */
+  backdrop-filter: blur(25px);
+}
+.card-title {
+  color: #ececec;
+  font-family: "El Messiri";
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.card-text {
+  color: #cfcfcf;
+  font-family: "El Messiri";
+  line-height: 1.7;
+  font-weight: 700;
+}
+/* responsive Screen 
+ */
+@media (max-width: 770px) {
+  .p {
+    font-family: "El Messiri";
+    color: #cfcfcf;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  @media (max-width: 500px) {
+    .row-cols-2 > * {
+      width: 70% !important;
+    }
+    .cards[data-v-8c5587ac] {
+      margin-top: 0;
+      position: relative;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  @media (max-width: 390px) {
+    .row-cols-2 > * {
+      width: 100% !important;
+    }
+    .cards[data-v-8c5587ac] {
+      margin-top: 0;
+      position: relative;
+    }
+    .p {
+      font-family: "El Messiri";
+      color: #cfcfcf;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+}
+</style>
