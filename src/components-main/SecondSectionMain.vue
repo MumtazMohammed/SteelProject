@@ -16,7 +16,7 @@
           </p>
         </div>
       </div>
-      <div class="row cards row-cols-2 row-cols-md-2 row-cols-lg-3 g-3">
+      <div class="row cards row-cols-1 row-cols-md-2 row-cols-lg-3 g-3">
         <div class="col">
           <div class="card">
             <img
@@ -141,6 +141,15 @@ export default {
   position: relative;
   z-index: 2;
 }
+.card-img-top {
+  transition: all 0.2s ease;
+  filter: opacity(0.7);
+}
+.card:hover .card-img-top {
+  border-radius: 0px;
+  transform: scale(1);
+  filter: opacity(1);
+}
 .row {
   margin-top: 50px;
   justify-content: space-between;
@@ -158,16 +167,19 @@ export default {
   flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #1971c2b0;
+  background-color: transparent;
   background-clip: border-box;
-  border-radius: 0px;
   overflow: hidden;
   backdrop-filter: blur(5px);
   transition: backdrop-filter 0.1s linear;
-  border-radius: 15px;
+  border: 0;
 }
-.card:hover {
-  backdrop-filter: blur(25px);
+.card-body {
+  background-color: #1a67ae;
+  transition: all 0.2s ease;
+}
+.card:hover .card-body {
+  border-radius: 0px;
 }
 .card-title {
   color: #ececec;
@@ -182,6 +194,7 @@ export default {
   line-height: 1.7;
   font-weight: 700;
   pointer-events: none;
+  text-align: justify;
 }
 /* responsive Screen 
  */
@@ -197,9 +210,9 @@ export default {
       display: none;
     }
   }
-  @media (max-width: 500px) {
+  /* @media (max-width: 500px) {
     .row-cols-2 > * {
-      width: 70% !important;
+      width: 100% !important;
     }
     .cards[data-v-8c5587ac] {
       margin-top: 0;
@@ -208,7 +221,7 @@ export default {
       display: flex;
       justify-content: center;
     }
-  }
+  } */
   @media (max-width: 390px) {
     .row-cols-2 > * {
       width: 100% !important;
