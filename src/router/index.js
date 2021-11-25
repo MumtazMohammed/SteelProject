@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import MainPage from "../views/MainPage.vue";
 import AboutPage from "../views/AboutPage.vue";
 import ProductPage from "../views/ProductPage.vue";
-import ContactPage from "../views/ContactPage.vue";//---------bootstrap import---------//
+import ContactPage from "../views/ContactPage.vue"; //---------bootstrap import---------//
 import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 Vue.use(VueRouter);

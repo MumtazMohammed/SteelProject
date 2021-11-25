@@ -1,13 +1,13 @@
 <template>
   <div class="section-two">
     <div class="container">
-      <div class="col-lg-12 h3">
-        <h3 class="text-center">ماذا نقدم</h3>
+      <div class="col-lg-12 lin-cir">
+        <h3 class="header-text">ماذا نقدم</h3>
       </div>
       <div class="row">
-        <div class="col-lg-12 col-md-12 ">
-          <h3>كنت تحتاج إلى عدد أكبر</h3>
-          <p class="p">
+        <div class="col-lg-12 col-md-12">
+          <h3 class="title">كنت تحتاج إلى عدد أكبر</h3>
+          <p class="discription">
             إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة
             عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء لغوية، مولد
             النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
@@ -102,13 +102,13 @@ export default {
 .container {
   position: relative;
 }
-.h3 {
+.lin-cir {
   margin-top: 30px;
   font-family: "El Messiri";
   color: #cfcfcf;
   position: relative;
 }
-.h3::after {
+.lin-cir::after {
   content: "";
   position: absolute;
   width: 166px;
@@ -118,7 +118,7 @@ export default {
   left: 50%;
   transform: translateX(-50%);
 }
-.h3::before {
+.lin-cir::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -130,14 +130,24 @@ export default {
   transform: translateX(-50%);
   z-index: 1;
 }
-.text-center {
+.header-text {
   color: #ececec;
+  text-align: center;
+  pointer-events: none;
 }
-.p {
+.title {
+  color: #ececec;
+  font-family: "El Messiri";
+  margin-bottom: 10px;
+  pointer-events: none;
+}
+.discription {
   font-family: "El Messiri";
   color: #cfcfcf;
   font-size: 18px;
   line-height: 1.6;
+  pointer-events: none;
+  text-align: justify;
 }
 .img-thumbnail {
   position: relative;
@@ -146,11 +156,6 @@ export default {
 .row {
   margin-top: 50px;
   justify-content: space-between;
-}
-h3 {
-  color: #ececec;
-  font-family: "El Messiri";
-  margin-bottom: 10px;
 }
 .cards {
   margin-top: 0;
@@ -173,7 +178,6 @@ h3 {
   transition: backdrop-filter 0.1s linear;
 }
 .card:hover {
-  /* box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.32); */
   backdrop-filter: blur(25px);
 }
 .card-title {
@@ -181,22 +185,23 @@ h3 {
   font-family: "El Messiri";
   border-bottom: 1px solid white;
   padding-bottom: 5px;
+  pointer-events: none;
 }
-
 .card-text {
   color: #cfcfcf;
   font-family: "El Messiri";
   line-height: 1.7;
   font-weight: 700;
+  pointer-events: none;
 }
 /* responsive Screen 
  */
 @media (max-width: 770px) {
-  .p {
-    font-family: "El Messiri";
-    color: #cfcfcf;
+  .discription {
     font-size: 15px;
-    line-height: 1.6;
+  }
+  .title {
+    font-size: 18px;
   }
   @media (max-width: 500px) {
     .row-cols-2 > * {
@@ -218,7 +223,7 @@ h3 {
       margin-top: 0;
       position: relative;
     }
-    .p {
+    .discription {
       font-family: "El Messiri";
       color: #cfcfcf;
       font-size: 16px;

@@ -9,12 +9,16 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 library.add(fas);
 Vue.component("fa", FontAwesomeIcon);
+
 //---------Animate.css import---------//
 import "animate.css";
+
+import store from "./store";
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
+  store,
   render: (h) => h(App),
 }).$mount("#app");

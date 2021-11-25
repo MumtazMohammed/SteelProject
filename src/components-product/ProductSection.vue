@@ -9,7 +9,12 @@
       <span class="line-left"></span>
     </div>
     <div class="container">
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4">
+      <div
+        class="
+          row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4
+          g-4
+        "
+      >
         <div class="col">
           <div class="card">
             <img
@@ -146,13 +151,11 @@ export default {
   background-color: #085aa5;
   clip-path: polygon(0 100%, 0 50%, 50% 0, 100% 50%, 100% 100%);
 }
-
 .container {
   min-height: 100vh;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .dot {
   display: flex;
   justify-content: center;
@@ -190,12 +193,14 @@ span {
   font-family: "El Messiri";
   font-weight: bold;
   color: #4c4c4c;
+  pointer-events: none;
 }
 .card-text {
   font-family: "El Messiri";
   line-height: 1.6;
   color: #6c6a6a;
   font-weight: 500;
+  pointer-events: none;
 }
 .btn:focus {
   box-shadow: none;
@@ -210,6 +215,7 @@ span {
   font-weight: 500;
   color: #ffffff;
   font-size: 17px;
+  pointer-events: none;
 }
 .btn:nth-child(1):hover {
   box-shadow: 0px 0px 0px 1px #25d366;
@@ -222,6 +228,7 @@ span {
   font-weight: 500;
   color: #ffffff;
   font-size: 17px;
+  pointer-events: none;
 }
 .btn:nth-child(2):hover {
   box-shadow: 0px 0px 0px 1px #2196f3;

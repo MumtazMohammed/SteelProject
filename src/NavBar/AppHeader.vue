@@ -70,6 +70,9 @@ export default {
 .navbar-collapse {
   transition: all 0.3s ease;
 }
+.navbar-nav {
+  padding: 0;
+}
 .navbar-nav > li:not(:last-child) {
   margin: 0 0 0 15px;
 }

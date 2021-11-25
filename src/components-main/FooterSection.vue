@@ -32,17 +32,20 @@ h5 {
   font-family: "El Messiri";
   color: #ffffff;
   font-size: 14px;
+  pointer-events: none;
 }
 span {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-family: fantasy;
+  pointer-events: none;
 }
 p {
   font-family: "El Messiri";
   color: #ffffff;
   font-size: 14px;
   display: inline-block;
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   .col-md-6 {

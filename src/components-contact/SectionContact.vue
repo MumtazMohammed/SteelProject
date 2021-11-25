@@ -3,19 +3,32 @@
     <div class="container">
       <div class="card" style="width: 100%">
         <div class="row g-0">
-          <form submit.prevent class="col-md-6 contact-box">
+          <form class="col-md-6 contact-box">
             <h3 class="contact-hd">تواصل معنا عبر البريد الأكتروني</h3>
             <div class="contact">
-              <input type="text" name="text" placeholder="الأسم" />
+              <input
+                type="text"
+                v-model="username"
+                name="text"
+                placeholder="الأسم"
+              />
             </div>
             <div class="contact">
-              <input type="email" placeholder="البريد الأكتروني" />
+              <input
+                type="email"
+                v-model="email"
+                placeholder="البريد الأكتروني"
+              />
             </div>
             <div class="contact-text">
-              <textarea name="write" placeholder="بماذا تفكر ..."></textarea>
+              <textarea
+                name="write"
+                v-model="message"
+                placeholder="بماذا تفكر ..."
+              ></textarea>
             </div>
             <div class="col-12">
-              <button class="btn" type="submit">أرسـل</button>
+              <button class="btn" submit.prevent type="submit">أرسـل</button>
             </div>
           </form>
           <div class="col-md-6">
@@ -55,13 +68,20 @@
 import FooterSecotion from "../components-main/FooterSection.vue";
 export default {
   name: "contact",
+  data() {
+    return {
+      username: "",
+      email: "",
+      message: "",
+    };
+  },
   components: {
     FooterSecotion,
   },
 };
 </script>
 
-<style  scoped>
+<style scoped>
 .contact-page {
   width: 100%;
   min-height: 85vh;
@@ -75,7 +95,6 @@ export default {
   justify-content: center;
   padding: 15px 0;
 }
-
 .contact-box {
   background-color: #085aa5;
   padding: 20px;
@@ -91,6 +110,7 @@ export default {
   text-align: center;
   font-size: 16px;
   font-family: "El Messiri";
+  pointer-events: none;
 }
 input::placeholder {
   color: #fff;
@@ -157,6 +177,10 @@ textarea:focus-visible {
   font-family: "El Messiri";
   font-weight: bold;
   color: #4c4c4c;
+  pointer-events: none;
+}
+.text-muted {
+  pointer-events: none;
 }
 </style>
 >

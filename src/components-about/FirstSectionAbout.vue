@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <div class="h4">
+          <div class="header-tital">
             <h4>من نحن</h4>
           </div>
         </div>
@@ -83,18 +83,13 @@ export default {
   min-height: 100%;
   padding-bottom: 20px;
 }
-h4 {
-  color: #085aa5;
-  font-family: "El Messiri";
-  padding-bottom: 5px;
-}
-.h4 {
+.header-tital {
   margin-top: 30px;
   font-family: "El Messiri";
   color: #cfcfcf;
   position: relative;
 }
-.h4::after {
+.header-tital::after {
   content: "";
   position: absolute;
   width: 166px;
@@ -104,7 +99,7 @@ h4 {
   left: 50%;
   transform: translateX(-50%);
 }
-.h4::before {
+.header-tital::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -116,7 +111,12 @@ h4 {
   transform: translateX(-50%);
   z-index: 1;
 }
-
+.header-tital > h4 {
+  color: #085aa5;
+  font-family: "El Messiri";
+  padding-bottom: 5px;
+  pointer-events: none;
+}
 .card-body {
   background-color: #eeeeee;
   border-radius: 5px;
@@ -130,7 +130,6 @@ h4 {
   background-color: #ffffffac;
   backdrop-filter: blur(3px);
 }
-
 .card-box {
   margin-top: 30px;
 }
@@ -140,6 +139,7 @@ h4 {
   border-bottom: 1.5px solid #636363;
   padding-bottom: 5px;
   transition: all 0.3s ease;
+  pointer-events: none;
 }
 .card-body:hover .card-title {
   color: #000000;
@@ -151,6 +151,7 @@ h4 {
   line-height: 1.7;
   font-weight: 500;
   transition: all 0.3s ease;
+  pointer-events: none;
 }
 .card-body:hover .card-text {
   color: #3b3b3b;
