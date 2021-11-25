@@ -16,7 +16,7 @@
           </p>
         </div>
       </div>
-      <div class="row cards row-cols-2 row-cols-md-3 row-cols-lg-3 g-1">
+      <div class="row cards row-cols-2 row-cols-md-2 row-cols-lg-3 g-3">
         <div class="col">
           <div class="card">
             <img
@@ -83,7 +83,6 @@ export default {
 <style scoped>
 .section-two {
   background-color: #085aa5;
-  border-top: 8px solid rgb(255, 255, 255);
   padding-bottom: 50px;
   width: 100%;
   height: auto;
@@ -93,8 +92,8 @@ export default {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2.5vh;
-  background-color: #ffffff;
+  height: 10vh;
+  background-color: #eeeeee;
   transform: skew(0deg, 8deg);
   z-index: 0;
   bottom: 111px;
@@ -103,7 +102,6 @@ export default {
   position: relative;
 }
 .lin-cir {
-  margin-top: 30px;
   font-family: "El Messiri";
   color: #cfcfcf;
   position: relative;
@@ -176,6 +174,7 @@ export default {
   overflow: hidden;
   backdrop-filter: blur(5px);
   transition: backdrop-filter 0.1s linear;
+  border-radius: 15px;
 }
 .card:hover {
   backdrop-filter: blur(25px);

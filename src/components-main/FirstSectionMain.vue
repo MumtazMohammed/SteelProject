@@ -38,7 +38,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 10vh;
-  background-color: #ffffff;
+  background-color: #eeeeee;
   transform: skew(0deg, -8deg);
   z-index: 0;
   bottom: 130px;
