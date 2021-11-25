@@ -202,6 +202,11 @@ export default {
   .title {
     font-size: 18px;
   }
+  @media (max-height: 600px) {
+    .section-two::after {
+      display: none;
+    }
+  }
   @media (max-width: 500px) {
     .row-cols-2 > * {
       width: 70% !important;

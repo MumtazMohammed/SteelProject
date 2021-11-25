@@ -49,6 +49,8 @@ h3 {
   font-size: 30px;
   margin: 0;
   pointer-events: none;
+  position: relative;
+  z-index: 1;
 }
 .alert-light {
   color: #cfcfcf;
@@ -57,6 +59,8 @@ h3 {
   font-family: "El Messiri";
   font-size: 22px;
   pointer-events: none;
+  position: relative;
+  z-index: 1;
 }
 .logo {
   color: #ffffff;
@@ -64,6 +68,8 @@ h3 {
   font-size: 30px;
   font-family: cursive;
   pointer-events: none;
+  position: relative;
+  z-index: 1;
 }
 
 @media (max-width: 992px) {
@@ -87,9 +93,15 @@ h3 {
     font-size: 18px;
   }
 }
-@media (max-height: 700px) {
+@media (max-height: 600px) {
   .section-one::after {
     display: none;
+  }
+  .section-one::before {
+    display: none;
+  }
+  .section-one {
+    height: calc(100vh - 0px);
   }
 }
 </style>
