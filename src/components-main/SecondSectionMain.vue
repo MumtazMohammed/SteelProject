@@ -88,16 +88,6 @@ export default {
   height: auto;
   position: relative;
 }
-.section-two::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10vh;
-  background-color: #eeeeee;
-  transform: skew(0deg, 8deg);
-  z-index: 0;
-  bottom: 111px;
-}
 .container {
   position: relative;
 }
@@ -111,7 +101,7 @@ export default {
   position: absolute;
   width: 166px;
   height: 3px;
-  background-color: #cfcfcf;
+  background-color: #eeeeee;
   bottom: -13px;
   left: 50%;
   transform: translateX(-50%);

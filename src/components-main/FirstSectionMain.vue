@@ -26,7 +26,7 @@ export default {
 .section-one {
   position: relative;
   width: 100%;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 0px);
   overflow: hidden;
   background-color: #085aa5;
   display: flex;
@@ -37,14 +37,14 @@ export default {
   content: "";
   position: absolute;
   width: 100%;
-  height: 10vh;
+  height: 75vh;
   background-color: #eeeeee;
   transform: skew(0deg, -8deg);
   z-index: 0;
-  bottom: 130px;
+  bottom: 91px;
 }
 h3 {
-  color: #ececec;
+  color: #085aa5;
   font-family: "El Messiri";
   font-size: 30px;
   margin: 0;
@@ -53,7 +53,7 @@ h3 {
   z-index: 1;
 }
 .alert-light {
-  color: #cfcfcf;
+  color: #6a6a6a;
   background-color: transparent;
   border-color: transparent;
   font-family: "El Messiri";
@@ -63,7 +63,7 @@ h3 {
   z-index: 1;
 }
 .logo {
-  color: #ffffff;
+  color: #085aa5;
   text-transform: uppercase;
   font-size: 30px;
   font-family: cursive;
@@ -94,12 +94,6 @@ h3 {
   }
 }
 @media (max-height: 600px) {
-  .section-one::after {
-    display: none;
-  }
-  .section-one::before {
-    display: none;
-  }
   .section-one {
     height: calc(100vh - 0px);
   }
