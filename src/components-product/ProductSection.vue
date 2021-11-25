@@ -215,7 +215,6 @@ span {
   font-weight: 500;
   color: #ffffff;
   font-size: 17px;
-  pointer-events: none;
 }
 .btn:nth-child(1):hover {
   box-shadow: 0px 0px 0px 1px #25d366;
@@ -228,7 +227,6 @@ span {
   font-weight: 500;
   color: #ffffff;
   font-size: 17px;
-  pointer-events: none;
 }
 .btn:nth-child(2):hover {
   box-shadow: 0px 0px 0px 1px #2196f3;
