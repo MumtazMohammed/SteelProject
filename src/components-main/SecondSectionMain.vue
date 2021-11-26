@@ -141,15 +141,6 @@ export default {
   position: relative;
   z-index: 2;
 }
-.card-img-top {
-  transition: all 0.2s ease;
-  filter: opacity(0.7);
-}
-.card:hover .card-img-top {
-  border-radius: 0px;
-  transform: scale(1);
-  filter: opacity(1);
-}
 .row {
   margin-top: 50px;
   justify-content: space-between;
@@ -177,9 +168,6 @@ export default {
 .card-body {
   background-color: #1a67ae;
   transition: all 0.2s ease;
-}
-.card:hover .card-body {
-  border-radius: 0px;
 }
 .card-title {
   color: #ececec;
